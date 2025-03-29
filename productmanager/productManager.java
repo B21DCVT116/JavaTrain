@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import productmanager.product;
 
 public class productManager {
-  pivate List <product> products;
+  private List <product> products;
 
   public productManager() {
     this.products = new ArrayList < product > ();
