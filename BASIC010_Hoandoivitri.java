@@ -6,9 +6,9 @@ class SwapNumber{
   public String swap (int i, String s){
     char[] arrChars = s.toCharArray();
     for (int j = i; j < arrChars.length-1; j+=2) {
-      char temp = arrChars[i];
-      arrChars[i] = arrChars[i+1];
-      arrChars[i+1] = temp;
+      char temp = arrChars[j];
+      arrChars[j] = arrChars[j+1];
+      arrChars[j+1] = temp;
     }
     return new String(arrChars);
   }
@@ -29,7 +29,7 @@ public class BASIC010_Hoandoivitri {
           SwapNumber swapNumber = new SwapNumber();
           s = swapNumber.swap(1, s);
         }
-        System.out.print(s);
+        System.out.println(s);
       }
     input.close();
   }
